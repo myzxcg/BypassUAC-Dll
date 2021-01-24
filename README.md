@@ -2,7 +2,7 @@
 
 [中文介绍](README.zh_CN.md)
 
-Use COM components to bypass Windows UAC pop-up verification. In order to facilitate the use of white-exe + black-dll to bypass the anti-virus software, a Dll version was made. A certain degree of anti-virus processing is done on the source code.
+Use COM components to bypass Windows UAC pop-up verification. In order to facilitate the use of white-exe and black-dll to bypass the anti-virus software, a Dll version was made. A certain degree of anti-virus processing is done on the source code.
 
 ## Usage
 
@@ -20,7 +20,7 @@ It is recommended to use a hijackable whitelist program to load the dll. Load.ex
 
 ## Compilation
 
-The project uses the [Detours](https://github.com/microsoft/Detours) library to **hook Freelibrary() ** function. So you need to download [Detours](https://github.com/microsoft/Detours) first, and specify the compiled Detours library files and header files in Visual Studio.
+The project uses the [Detours](https://github.com/microsoft/Detours) library to **hook Freelibrary()** function. So you need to download [Detours](https://github.com/microsoft/Detours) first, and specify the compiled Detours library files and header files in Visual Studio.
 
 If you modify the `#define SKey "..."` field in `header.h` (this field is the RC4 key), you also need to modify the value of Part1 in the `#define Part1 "..."` field . The modification method refers to the comments in the code.
 

@@ -18,6 +18,6 @@
 
 ## 源码编译
 
-项目中使用[Detours](https://github.com/microsoft/Detours)库来**hook Freelibrary() **函数。所以需先下载好[Detours](https://github.com/microsoft/Detours)，并将编译好的Detours库文件和头文件在Visual Studio中指定。
+项目中使用[Detours](https://github.com/microsoft/Detours)库来**hook Freelibrary()**函数。所以需先下载好[Detours](https://github.com/microsoft/Detours)，并将编译好的Detours库文件和头文件在Visual Studio中指定。
 
 如果修改了`header.h`中的`#define SKey "..."`字段（此字段是RC4的密钥），那还需修改`#define Part1 "..."`字段中Part1的值。修改方法参考代码中的注释。
